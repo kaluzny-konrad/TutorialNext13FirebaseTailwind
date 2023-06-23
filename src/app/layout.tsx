@@ -3,6 +3,8 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/Footer";
 import Login from "@/components/Login";
+import { Providers } from "./providers";
+import UserDashboard from "@/components/UserDashboard";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -19,12 +21,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <div className="flex-main-col brand-bg">
-          <Header />
-          <Login />
-          <main className="flex-1-col p-4">{children}</main>
-          <Footer />
-        </div>
+        <Providers>
+          <div className="flex-main-col brand-bg">
+            <Header />
+            <Login />
+            <UserDashboard />
+            <main className="flex-1-col p-4">{children}</main>
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   );

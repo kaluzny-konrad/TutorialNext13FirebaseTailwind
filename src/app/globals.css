@@ -32,19 +32,19 @@
   }
 
   .text-sm-flex {
-    @apply text-xs sm:text-sm;
+    @apply text-xs sm:text-sm duration-300;
   }
 
   .text-3xl-flex {
-    @apply text-xl sm:text-3xl;
+    @apply text-xl sm:text-3xl duration-300;
   }
 
   .text-4xl-flex {
-    @apply text-2xl sm:text-4xl;
+    @apply text-2xl sm:text-4xl duration-300;
   }
 
   .gap-form-flex {
-    @apply gap-2 sm:gap-4;
+    @apply gap-2 sm:gap-4 duration-300;
   }
 
   .styled-nav {
@@ -56,7 +56,7 @@
   }
 
   .styled-button {
-    @apply border border-white border-solid;
+    @apply border border-white border-solid font-semibold;
   }
 
   .left-loader {
@@ -64,6 +64,6 @@
   }
 
   .form-w {
-    @apply w-full max-w-[40ch];
+    @apply w-full max-w-sm;
   }
 }
