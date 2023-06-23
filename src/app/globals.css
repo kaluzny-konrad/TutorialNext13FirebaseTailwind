@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .brand-text {
+    @apply text-slate-900;
+  }
+
+  .brand-bg {
+    @apply bg-slate-900 text-white;
+  }
+
+  .brand-text-hover {
+    @apply duration-300 hover:text-slate-400 cursor-pointer;
+  }
+
+  .flex-main-col {
+    @apply flex flex-col min-h-screen relative;
+  }
+
+  .flex-1-col {
+    @apply flex-1 flex flex-col;
+  }
+
+  .sticky-nav {
+    @apply sticky flex items-center justify-between bg-inherit;
+  }
+
+  .all-center {
+    @apply justify-center items-center;
+  }
+
+  .text-sm-flex {
+    @apply text-xs sm:text-sm;
+  }
+
+  .text-3xl-flex {
+    @apply text-xl sm:text-3xl;
+  }
+
+  .text-4xl-flex {
+    @apply text-2xl sm:text-4xl;
+  }
+
+  .gap-form-flex {
+    @apply gap-2 sm:gap-4;
+  }
+
+  .styled-nav {
+    @apply border-b border-solid border-white;
+  }
+
+  .styled-input {
+    @apply border-b-2 border-solid focus:border-cyan-300 outline-none;
+  }
+
+  .styled-button {
+    @apply border border-white border-solid;
+  }
+
+  .left-loader {
+    @apply relative after:absolute after:top-0 after:right-full after:bg-white after:z-10 after:w-full after:h-full overflow-hidden hover:after:translate-x-full after:duration-300 hover:text-slate-900 hover:font-semibold;
+  }
+
+  .form-w {
+    @apply w-full max-w-[40ch];
+  }
+}
