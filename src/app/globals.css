@@ -35,12 +35,20 @@
     @apply text-xs sm:text-sm duration-300;
   }
 
+  .text-xl-flex {
+    @apply text-sm sm:text-xl duration-300;
+  }
+
   .text-3xl-flex {
     @apply text-xl sm:text-3xl duration-300;
   }
 
   .text-4xl-flex {
     @apply text-2xl sm:text-4xl duration-300;
+  }
+
+  .gap-5-flex {
+    @apply gap-3 sm:gap-5 duration-300;
   }
 
   .gap-form-flex {
@@ -65,5 +73,17 @@
 
   .form-w {
     @apply w-full max-w-sm;
+  }
+
+  .brand-big-border {
+    @apply text-cyan-300 border-solid border-4 border-cyan-300
+  }
+
+  .text-uppercase-center {
+    @apply text-lg font-bold text-center uppercase;
+  }
+
+  .opacity-flex {
+    @apply duration-300 hover:opacity-70;
   }
 }

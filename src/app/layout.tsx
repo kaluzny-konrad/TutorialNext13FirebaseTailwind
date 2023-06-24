@@ -2,8 +2,8 @@ import Header from "@/components/Header";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/Footer";
-import Login from "@/components/Login";
 import { Providers } from "./providers";
+import Login from "@/components/Login";
 import UserDashboard from "@/components/UserDashboard";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -30,6 +30,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </Providers>
+        <div id="portal"></div>
       </body>
     </html>
   );
